@@ -15,7 +15,7 @@ HIJKLMNOPQ ...
 
 ??? exercice "Exercice"
 
-    1. Sur l'illustration suivante, quel est la clé utilisée ?
+    1. Sur l'illustration suivante, quelle est la clé utilisée ?
 
         ![Exo1](Caesar3.svg){ width=40% }
 
