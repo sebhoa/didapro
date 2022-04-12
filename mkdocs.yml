@@ -1,0 +1,55 @@
+site_name: Atelier Mkdocs
+
+theme:
+  name: material
+  logo: BiArrowLeftRight.svg
+  language: fr
+  features:
+    - navigation.instant
+    - navigation.tabs
+    
+markdown_extensions:
+  - meta
+
+  # Pour ajouter des attributs 
+  - attr_list
+  
+  # Admonitions et variantes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  # Les onglets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # Listes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+  # Section des marqueurs intelligents
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.keys
+
+  # Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  # LaTeX  
+  - pymdownx.arithmatex:
+      generic: true
+      smart_dollar: false
+
+extra_javascript:
+  # LaTeX
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
